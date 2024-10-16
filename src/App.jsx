@@ -4,14 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './Todo'
 import Ternary from './Ternary'
+import Rendering from './Rendering'
 
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Ternary task = 'Learning React JSX' isComplete = {true}></Ternary>
+      <Rendering tasks = {'Laptop Repair'}  isComplete = {true}></Rendering>
+      <Rendering tasks = {'Mobile Display Repair'}  isComplete = {false}></Rendering>
+      <Rendering tasks = {'Keyboard button repair'}  isComplete = {true}></Rendering>
+      {/* <Ternary task = 'Learning React JSX' isComplete = {true}></Ternary>
       <Ternary task = 'Core React' isComplete = {false}></Ternary>
-      <Ternary task = 'Using Vite' isComplete = {true}></Ternary>
+      <Ternary task = 'Using Vite' isComplete = {true}></Ternary> */}
       {/* <Todo task = 'Learn React with Vite' isDone = {true}></Todo>
       <Todo task = 'Explore Concepts' isDone = {true}></Todo>
       <Todo task = 'Use React and JSX' isDone = {false}></Todo>
